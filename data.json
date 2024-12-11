@@ -1,0 +1,119 @@
+[
+  {
+      "test_id": "TC001",
+      "name": "User Login - Valid Credentials",
+      "description": "Verify user can successfully log in with valid username and password",
+      "expected_outcome": "User is redirected to dashboard",
+      "status": "Passed",
+      "priority": "High",
+      "module": "Authentication",
+      "test_steps": [
+          "Navigate to login page",
+          "Enter valid username",
+          "Enter valid password", 
+          "Click login button",
+          "Verify dashboard is displayed"
+      ]
+  },
+  {
+      "test_id": "TC002", 
+      "name": "User Login - Invalid Credentials",
+      "description": "Verify system prevents login with incorrect credentials",
+      "expected_outcome": "Error message displayed, no access to dashboard",
+      "status": "Passed",
+      "priority": "High", 
+      "module": "Authentication",
+      "test_steps": [
+          "Navigate to login page",
+          "Enter invalid username",
+          "Enter invalid password",
+          "Click login button", 
+          "Verify error message is displayed"
+      ]
+  },
+  {
+      "test_id": "TC003",
+      "name": "Password Reset Functionality", 
+      "description": "Validate end-to-end password reset process",
+      "expected_outcome": "User can successfully reset password via email link",
+      "status": "In Progress",
+      "priority": "Medium",
+      "module": "Authentication",
+      "test_steps": [
+          "Navigate to login page",
+          "Click 'Forgot Password'", 
+          "Enter registered email",
+          "Check email for reset link",
+          "Click reset link",
+          "Enter new password",
+          "Confirm password reset"
+      ]
+  },
+  {
+      "test_id": "TC004",
+      "name": "User Profile Update",
+      "description": "Verify user can update profile information",
+      "expected_outcome": "Profile information is successfully updated and saved",
+      "status": "Not Started", 
+      "priority": "Low",
+      "module": "User Management",
+      "test_steps": [
+          "Log in to application",
+          "Navigate to profile settings",
+          "Update user details",
+          "Save changes",
+          "Verify updated information is reflected"
+      ]
+  },
+  {
+      "test_id": "TC005", 
+      "name": "Product Search Functionality",
+      "description": "Validate product search across different categories",
+      "expected_outcome": "Correct products displayed based on search criteria",
+      "status": "In Progress",
+      "priority": "High",
+      "module": "Search",
+      "test_steps": [
+          "Navigate to product search page",
+          "Enter valid product name",
+          "Apply category filters",
+          "Verify search results match criteria",
+          "Check pagination works correctly"
+      ]
+  },
+  {
+      "test_id": "TC006",
+      "name": "Shopping Cart Workflow",
+      "description": "Verify complete purchase process from cart to checkout",
+      "expected_outcome": "Successful product purchase and order confirmation",
+      "status": "Failed",
+      "priority": "Critical",
+      "module": "E-commerce",
+      "test_steps": [
+          "Add product to cart",
+          "View cart contents",
+          "Proceed to checkout",
+          "Fill shipping details",
+          "Select payment method",
+          "Complete purchase",
+          "Verify order confirmation"
+      ]
+  },
+  {
+      "test_id": "TC007",
+      "name": "Mobile Responsiveness",
+      "description": "Check website functionality on different mobile devices",
+      "expected_outcome": "Website is fully functional and properly displayed on mobile devices",
+      "status": "Not Started",
+      "priority": "Medium", 
+      "module": "UI/UX",
+      "test_steps": [
+          "Open website on iPhone",
+          "Check layout and alignment",
+          "Test navigation menus",
+          "Verify all buttons are clickable",
+          "Test on Android device",
+          "Check cross-device compatibility"
+      ]
+  }
+]
