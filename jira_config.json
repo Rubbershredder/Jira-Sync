@@ -1,0 +1,6 @@
+{
+    "jira_server": "https://{your_domain}.atlassian.net",
+    "username": "{Email}",
+    "api_token": "{API KEY}",
+    "project_key": "{Project Key}"
+}
